@@ -1,0 +1,32 @@
+[08:34:34] server started pid=4379 data=primary health={"blobs": {"bytes": 0, "count": 0}, "database": "ok", "limits": {"max_duration_seconds": 3600, "max_pixels": 8294400, "max_upload_bytes": 134217728, "render_timeout_seconds": 180, "workers": 1}, "recovery": {"interrupted": 0}, "service": "reel-loom", "status": "ready", "ticket_states": {}, "version": "0.1.0"}
+[08:34:34] ingested asset=asset_246a2fda456f4902a82b0275a1033f30 blob=5f13e1b03481... reel=reel_97f4a1b23d5c432f892e74423cfad1a2
+[08:34:34] queued tickets render_61952b7b9fbb44caa0df03e8895f4130 (video), render_bda42b8d6cba49a3952e21df35901c85 (audio)
+[08:34:34] ticket render_61952b7b9fbb44caa0df03e8895f4130 observed running, taking whole-directory backup now
+[08:34:34] layout[primary-during-running]: blobs=1 scratch_entries=2 tickets=[{'id': 'render_61952b7b9fbb44caa0df03e8895f4130', 'state': 'running', 'cancel': 0, 'attempt': 1, 'error': None}, {'id': 'render_bda42b8d6cba49a3952e21df35901c85', 'state': 'queued', 'cancel': 0, 'attempt': 1, 'error': None}]
+[08:34:34] layout[backup-taken-while-running]: blobs=1 scratch_entries=2 tickets=[{'id': 'render_61952b7b9fbb44caa0df03e8895f4130', 'state': 'running', 'cancel': 0, 'attempt': 1, 'error': None}, {'id': 'render_bda42b8d6cba49a3952e21df35901c85', 'state': 'queued', 'cancel': 0, 'attempt': 1, 'error': None}]
+[08:34:34] server exited rc=-9
+[08:34:34] primary killed with SIGKILL while a render was running
+[08:34:34] layout[primary-after-sigkill]: blobs=1 scratch_entries=2 tickets=[{'id': 'render_61952b7b9fbb44caa0df03e8895f4130', 'state': 'running', 'cancel': 0, 'attempt': 1, 'error': None}, {'id': 'render_bda42b8d6cba49a3952e21df35901c85', 'state': 'queued', 'cancel': 0, 'attempt': 1, 'error': None}]
+[08:34:34] layout[restored-before-start]: blobs=1 scratch_entries=2 tickets=[{'id': 'render_61952b7b9fbb44caa0df03e8895f4130', 'state': 'running', 'cancel': 0, 'attempt': 1, 'error': None}, {'id': 'render_bda42b8d6cba49a3952e21df35901c85', 'state': 'queued', 'cancel': 0, 'attempt': 1, 'error': None}]
+[08:34:34] server started pid=4489 data=restored health={"blobs": {"bytes": 112672, "count": 1}, "database": "ok", "limits": {"max_duration_seconds": 3600, "max_pixels": 8294400, "max_upload_bytes": 134217728, "render_timeout_seconds": 180, "workers": 1}, "recovery": {"interrupted": 1}, "service": "reel-loom", "status": "ready", "ticket_states": {"failed": 1, "running": 1}, "version": "0.1.0"}
+[08:34:34] restored service health recovery={'interrupted': 1}
+[08:34:34] recovered states: video=failed({'context': {}, 'detail': 'Previous worker stopped before committing output', 'error': 'worker_interrupted'}) audio=running
+[08:34:59] retry outcome: {'state': 'succeeded', 'attempt': 2, 'artifact_count': 1, 'fingerprint_unchanged': True}
+[08:34:59] conformance valid=True; download 95367 bytes sha256_match=True
+[08:34:59] imprint imprint_ecb41a136d44444faeb6cbba7a7fe677 verify=True
+[08:34:59] lineage node kinds=['blob', 'imprint', 'look_version', 'reel_revision', 'render', 'rendition', 'source_media'] edges=8
+[08:34:59] reconcile consistent=True missing=0 bad_size=0 unregistered=0
+[08:34:59] layout[restored-after-delivery]: blobs=4 scratch_entries=2 tickets=[{'id': 'render_61952b7b9fbb44caa0df03e8895f4130', 'state': 'succeeded', 'cancel': 0, 'attempt': 2, 'error': None}, {'id': 'render_bda42b8d6cba49a3952e21df35901c85', 'state': 'succeeded', 'cancel': 0, 'attempt': 1, 'error': None}]
+[08:34:59] server exited rc=-15
+[08:34:59] server started pid=4689 data=restored-partial health={"blobs": {"bytes": 112672, "count": 1}, "database": "ok", "limits": {"max_duration_seconds": 3600, "max_pixels": 8294400, "max_upload_bytes": 134217728, "render_timeout_seconds": 180, "workers": 1}, "recovery": {"interrupted": 1}, "service": "reel-loom", "status": "ready", "ticket_states": {"failed": 2}, "version": "0.1.0"}
+[08:34:59] partial copy: /health database=ok blobs={'bytes': 112672, 'count': 1} (DB opens normally despite missing bytes)
+[08:34:59] partial copy retry error: {'context': {'id': '5f13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2'}, 'detail': 'blob does not exist', 'error': 'not_found'}
+[08:34:59] partial reconcile consistent=False missing=1
+[08:34:59] server exited rc=-15
+[08:34:59] server started pid=4698 data=graceful health={"blobs": {"bytes": 0, "count": 0}, "database": "ok", "limits": {"max_duration_seconds": 3600, "max_pixels": 8294400, "max_upload_bytes": 134217728, "render_timeout_seconds": 180, "workers": 1}, "recovery": {"interrupted": 0}, "service": "reel-loom", "status": "ready", "ticket_states": {}, "version": "0.1.0"}
+[08:35:00] graceful ticket render_e97cb4ec38a54a2e996b4a3cbc8b6cd4 running; sending SIGINT (Ctrl-C, the only graceful path)
+[08:35:00] server exited rc=0
+[08:35:00] server started pid=4734 data=graceful health={"blobs": {"bytes": 112672, "count": 1}, "database": "ok", "limits": {"max_duration_seconds": 3600, "max_pixels": 8294400, "max_upload_bytes": 134217728, "render_timeout_seconds": 180, "workers": 1}, "recovery": {"interrupted": 0}, "service": "reel-loom", "status": "ready", "ticket_states": {"cancelled": 1}, "version": "0.1.0"}
+[08:35:00] graceful shutdown ticket state after restart: cancelled {'context': {}, 'detail': 'The render was cancelled', 'error': 'render_cancelled'}
+[08:35:00] server exited rc=-15
+[08:35:00] drill complete; evidence written to /tmp/loom-drill/evidence

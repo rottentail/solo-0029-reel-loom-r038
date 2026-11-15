@@ -1,0 +1,10 @@
+2026-11-15 08:34:34,229 INFO root 声画织场服务: http://127.0.0.1:8841/loom/v1/
+2026-11-15 08:34:34,289 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/health HTTP/1.1" 200 -
+2026-11-15 08:34:34,393 INFO reel_loom.http 127.0.0.1 "POST /loom/v1/assets HTTP/1.1" 200 -
+2026-11-15 08:34:34,403 INFO reel_loom.http 127.0.0.1 "POST /loom/v1/reels HTTP/1.1" 200 -
+2026-11-15 08:34:34,411 INFO reel_loom.http 127.0.0.1 "PUT /loom/v1/looks/preview HTTP/1.1" 200 -
+2026-11-15 08:34:34,417 INFO reel_loom.http 127.0.0.1 "PUT /loom/v1/looks/listening HTTP/1.1" 200 -
+2026-11-15 08:34:34,422 INFO reel_loom.http 127.0.0.1 "POST /loom/v1/tickets HTTP/1.1" 200 -
+2026-11-15 08:34:34,428 INFO reel_loom.http 127.0.0.1 "POST /loom/v1/tickets HTTP/1.1" 200 -
+2026-11-15 08:34:34,429 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/tickets/render_61952b7b9fbb44caa0df03e8895f4130 HTTP/1.1" 200 -
+2026-11-15 08:34:34,534 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/tickets/render_61952b7b9fbb44caa0df03e8895f4130 HTTP/1.1" 200 -

@@ -1,0 +1,59 @@
+{
+  "label": "backup-taken-while-running",
+  "path": "/tmp/loom-drill/backup",
+  "exists": true,
+  "wal": true,
+  "blobs": [
+    {
+      "rel": "5f/13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2",
+      "size": 112672,
+      "sha256": "5f13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2"
+    }
+  ],
+  "scratch": [
+    {
+      "rel": "loom-5tlo0v46",
+      "is_dir": true,
+      "size": null
+    },
+    {
+      "rel": "loom-5tlo0v46/media.mp4",
+      "is_dir": false,
+      "size": 95367
+    }
+  ],
+  "top": [
+    "blobs",
+    "reel_loom.lock",
+    "reel_loom.sqlite3",
+    "reel_loom.sqlite3-shm",
+    "reel_loom.sqlite3-wal",
+    "scratch"
+  ],
+  "count_blobs": 1,
+  "count_assets": 1,
+  "count_reels": 1,
+  "count_revisions": 1,
+  "count_looks": 2,
+  "count_tickets": 2,
+  "count_artifacts": 0,
+  "count_imprints": 0,
+  "count_cue_tracks": 0,
+  "count_events": 7,
+  "ticket_rows": [
+    {
+      "id": "render_61952b7b9fbb44caa0df03e8895f4130",
+      "state": "running",
+      "cancel": 0,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "id": "render_bda42b8d6cba49a3952e21df35901c85",
+      "state": "queued",
+      "cancel": 0,
+      "attempt": 1,
+      "error": null
+    }
+  ]
+}

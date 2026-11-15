@@ -1,0 +1,13 @@
+2026-11-15 08:34:59,779 INFO root 声画织场服务: http://127.0.0.1:8841/loom/v1/
+2026-11-15 08:34:59,875 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/health HTTP/1.1" 200 -
+2026-11-15 08:34:59,896 INFO reel_loom.http 127.0.0.1 "POST /loom/v1/assets HTTP/1.1" 200 -
+2026-11-15 08:34:59,907 INFO reel_loom.http 127.0.0.1 "POST /loom/v1/reels HTTP/1.1" 200 -
+2026-11-15 08:34:59,917 INFO reel_loom.http 127.0.0.1 "PUT /loom/v1/looks/preview HTTP/1.1" 200 -
+2026-11-15 08:34:59,928 INFO reel_loom.http 127.0.0.1 "POST /loom/v1/tickets HTTP/1.1" 200 -
+2026-11-15 08:34:59,930 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/tickets/render_e97cb4ec38a54a2e996b4a3cbc8b6cd4 HTTP/1.1" 200 -
+2026-11-15 08:35:00,032 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/tickets/render_e97cb4ec38a54a2e996b4a3cbc8b6cd4 HTTP/1.1" 200 -
+2026-11-15 08:35:00,032 INFO root Stopping render service
+2026-11-15 08:35:00,124 INFO root 声画织场服务: http://127.0.0.1:8841/loom/v1/
+2026-11-15 08:35:00,279 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/health HTTP/1.1" 200 -
+2026-11-15 08:35:00,283 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/tickets/render_e97cb4ec38a54a2e996b4a3cbc8b6cd4 HTTP/1.1" 200 -
+2026-11-15 08:35:00,285 INFO reel_loom.http 127.0.0.1 "GET /loom/v1/health HTTP/1.1" 200 -

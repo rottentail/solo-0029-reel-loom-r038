@@ -1,0 +1,30 @@
+{
+  "initial": {
+    "asset_id": "asset_db38d6f3079b4c12a61307b62dbefc26",
+    "blob": "5f13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2",
+    "blob_rows": 1,
+    "asset_rows": 1
+  },
+  "after_delete": {
+    "consistent": false,
+    "missing": [
+      "5f13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2"
+    ],
+    "bad_size": [],
+    "unregistered_blobs": []
+  },
+  "after_reingest": {
+    "same_asset_id": true,
+    "same_blob": true,
+    "file_restored": true,
+    "blob_rows": 1,
+    "asset_rows": 1,
+    "reconcile": {
+      "consistent": true,
+      "missing": [],
+      "bad_size": [],
+      "unregistered_blobs": []
+    },
+    "verify": "13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2"
+  }
+}

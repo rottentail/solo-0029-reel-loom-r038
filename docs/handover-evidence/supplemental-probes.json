@@ -1,0 +1,55 @@
+{
+  "intact_reconcile": {
+    "consistent": true,
+    "missing": [],
+    "bad_size": [],
+    "unregistered_blobs": []
+  },
+  "intact_resolve_verify": "13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2",
+  "same_size_corruption": {
+    "size_unchanged": true,
+    "reconcile": {
+      "consistent": true,
+      "missing": [],
+      "bad_size": [],
+      "unregistered_blobs": []
+    },
+    "note": "reconcile checks existence and size only"
+  },
+  "verify_after_corruption": {
+    "error": "blob_corrupt",
+    "detail": "Media digest differs from stored content",
+    "context": {}
+  },
+  "restore_after_corruption": {
+    "error": "blob_corrupt",
+    "detail": "Media digest differs from stored content",
+    "context": {}
+  },
+  "health_after_corruption": {
+    "service": "reel-loom",
+    "version": "0.1.0",
+    "status": "ready",
+    "database": "ok",
+    "ticket_states": {},
+    "blobs": {
+      "count": 1,
+      "bytes": 112672
+    },
+    "recovery": {
+      "interrupted": 0
+    },
+    "limits": {
+      "max_upload_bytes": 134217728,
+      "max_duration_seconds": 3600,
+      "max_pixels": 8294400,
+      "workers": 1,
+      "render_timeout_seconds": 30
+    }
+  },
+  "instance_lock": {
+    "error": "instance_active",
+    "detail": "Another service is using this media workspace",
+    "context": {}
+  }
+}

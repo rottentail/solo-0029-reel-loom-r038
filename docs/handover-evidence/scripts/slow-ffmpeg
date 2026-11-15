@@ -1,0 +1,8 @@
+#!/bin/bash
+# Drill-only throttle wrapper: delegates to the real static FFmpeg, then sleeps
+# so a short render stays in the running state long enough to be observed.
+REAL=/tmp/loom-deps/imageio_ffmpeg/binaries/ffmpeg-linux-aarch64-v7.0.2
+"$REAL" "$@"
+rc=$?
+sleep 12
+exit $rc

@@ -1,0 +1,146 @@
+{
+  "asset_id": "asset_246a2fda456f4902a82b0275a1033f30",
+  "asset_blob": "5f13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2",
+  "reel_id": "reel_97f4a1b23d5c432f892e74423cfad1a2",
+  "ticket_video": "render_61952b7b9fbb44caa0df03e8895f4130",
+  "ticket_audio": "render_bda42b8d6cba49a3952e21df35901c85",
+  "running_progress_at_backup": 0.0,
+  "backup_blob_count": 1,
+  "scratch_after_kill": [
+    {
+      "rel": "loom-5tlo0v46",
+      "is_dir": true,
+      "size": null
+    },
+    {
+      "rel": "loom-5tlo0v46/media.mp4",
+      "is_dir": false,
+      "size": 95367
+    }
+  ],
+  "ticket_rows_after_kill": [
+    {
+      "id": "render_61952b7b9fbb44caa0df03e8895f4130",
+      "state": "running",
+      "cancel": 0,
+      "attempt": 1,
+      "error": null
+    },
+    {
+      "id": "render_bda42b8d6cba49a3952e21df35901c85",
+      "state": "queued",
+      "cancel": 0,
+      "attempt": 1,
+      "error": null
+    }
+  ],
+  "recovery_report": {
+    "interrupted": 1
+  },
+  "video_ticket_after_recovery": {
+    "state": "failed",
+    "error": {
+      "context": {},
+      "detail": "Previous worker stopped before committing output",
+      "error": "worker_interrupted"
+    },
+    "attempt": 1,
+    "artifacts": []
+  },
+  "audio_ticket_after_recovery": {
+    "state": "running",
+    "attempt": 1
+  },
+  "retry_outcome": {
+    "state": "succeeded",
+    "attempt": 2,
+    "artifact_count": 1,
+    "fingerprint_unchanged": true
+  },
+  "artifact_id": "artifact_cc1e53ea0788448f90f3dde55c6dfaee",
+  "artifact_blob": "c835305bcfc068002030ef769b77127e9955b549bb68d4fd3314d35927892ba7",
+  "conformance_valid": true,
+  "conformance_checks": [
+    {
+      "check": "duration",
+      "passed": true
+    },
+    {
+      "check": "audio_format",
+      "passed": true
+    },
+    {
+      "check": "video_dimensions",
+      "passed": true
+    },
+    {
+      "check": "frame_rate",
+      "passed": true
+    },
+    {
+      "check": "full_decode",
+      "passed": true
+    },
+    {
+      "check": "monotonic_frames",
+      "passed": true
+    }
+  ],
+  "download_bytes": 95367,
+  "download_sha256_matches": true,
+  "imprint_id": "imprint_ecb41a136d44444faeb6cbba7a7fe677",
+  "imprint_verify": true,
+  "imprint_blob": "c9480615dd42e7ad8cf336e8dcf77667320ee692a2a8cfa2897885583d523867",
+  "lineage_node_kinds": [
+    "blob",
+    "imprint",
+    "look_version",
+    "reel_revision",
+    "render",
+    "rendition",
+    "source_media"
+  ],
+  "lineage_edge_count": 8,
+  "reconcile_after_recovery": {
+    "bad_size": [],
+    "consistent": true,
+    "missing": [],
+    "unregistered_blobs": []
+  },
+  "partial_restore_blob_files_removed": 1,
+  "partial_health_database": "ok",
+  "partial_health_blobs_stat": {
+    "bytes": 112672,
+    "count": 1
+  },
+  "partial_ticket_looks_normal": {
+    "state": "failed",
+    "snapshot_sources": 1
+  },
+  "partial_retry_error": {
+    "context": {
+      "id": "5f13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2"
+    },
+    "detail": "blob does not exist",
+    "error": "not_found"
+  },
+  "partial_reconcile": {
+    "consistent": false,
+    "missing_count": 1,
+    "missing_sample": [
+      "5f13e1b03481ac1881b3c8d4832bd824c78fa8b08b6fbc4720e23da096f3b3d2"
+    ]
+  },
+  "graceful_exit_code": 0,
+  "graceful_ticket_after_restart": {
+    "state": "cancelled",
+    "error": {
+      "context": {},
+      "detail": "The render was cancelled",
+      "error": "render_cancelled"
+    }
+  },
+  "graceful_recovery_report": {
+    "interrupted": 0
+  }
+}
